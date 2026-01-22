@@ -6,6 +6,23 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @keyframes pong {
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(0.9);
+                background-color: aquamarine;
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .g{
+            animation: pong 3s ease-in-out infinite;
+        }
+    </style>
 </head>
 <body>
     <header class="lg:max-w-[800px] xl:max-w-[1162px] mx-auto mt-9 lg:flex lg:justify-end mb-10 lg:mb-0">
@@ -26,8 +43,9 @@
                     <p class="text-base text-[#3E3E3E] mb-9">A full stack allaround designer that placerat in massa consectetur</p>
                     <button class="text-[#FFFFFF] font-semibold text-base py-3 px-4 lg:py-3.5 lg:px-7 bg-[#F46060] rounded-md">Hire Me</button>
                 </div>
-                <div>
+                <div class="relative">
                     <img class="max-w-[70%] lg:max-w-[70%] xl:max-w-[60%] mx-auto lg:mr-0 lg:pt-0" src="images/do not use this pic.png" alt="">
+                    <span class="absolute text-2xl rounded-md py-2 px-4 font-semibold bg-amber-300 left-100 bottom-40 g">ami valo</span>
                 </div>
             </div>
         </section>
